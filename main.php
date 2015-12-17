@@ -16,6 +16,6 @@ add_action('wp_ajax_gf', function(){
 
     header('Content-Type: application/json');
 
-    echo json_encode($form);
+    echo json_encode($form, JSON_PRETTY_PRINT);
     die;
 });
